@@ -7,9 +7,9 @@ class App extends Component {
   }
 
   componentWillMount = async () => {
-    const response = await fetch("/")
+    const response = await fetch("/puppy")
     const json = await response.json()
-    console.log(response)
+    console.log(json)
   }
   render() {
     return (
